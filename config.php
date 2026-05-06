@@ -1,0 +1,6 @@
+<?php
+define("WEB_URL","http://localhost/Sciencemore/web/");
+define("SYS_URL","http://localhost/Sciencemore/system/");
+
+
+?>
