@@ -9,28 +9,37 @@ This system helps manage students, teachers, parents, and admin tasks such as cl
 - 👨‍👩‍👧 Parent: Child progress, exam results, performance monitoring
 - 🏫 Admin/Reception: Manage records, schedule exams, track attendance, handle payments
 
-## 🔧 Technologies Used
 
-- Backend: PHP (Core PHP), Python (feedback collection)
-- Frontend: Bootstrap
-- Database: MySQL
-- Server: XAMPP (Apache)
+# ⚙️ Setup Instructions
 
-## ⚙️ Setup Instructions
+## 1. Clone the Repository
 
-### 1. Install Dependencies
+```bash
+git clone https://github.com/Sandeepa1997/tuition-management-system.git
+cd tuition-management-system
+```
+
+---
+
+## 2. Install Dependencies
+
+Make sure you have Composer installed, then run:
 
 ```bash
 composer install
 ```
 
-### 2. Configure Environment
+---
+
+## 3. Configure Environment
+
+Copy the example environment file:
 
 ```bash
 cp .env.example .env
 ```
 
-### 3. Update `.env`
+Update `.env` with your local settings:
 
 ```env
 DB_HOST=localhost
@@ -42,13 +51,28 @@ WEB_URL=http://localhost/Sciencemore/web/
 SYS_URL=http://localhost/Sciencemore/system/
 ```
 
-### 4. Import Database
+---
+
+## 4. Import Database
 
 ```bash
 mysql -u root -p sciencemore < database/sciencemore.sql
 ```
 
-### 5. Run the Application
+---
 
+## 5. Start XAMPP
+
+- Launch **Apache** and **MySQL** from the XAMPP Control Panel.
+- Place the project folder inside the `htdocs` directory if it is not already there.
+
+---
+
+## 6. Run the Application
+
+Open your browser and visit:
+
+```text
 http://localhost/Sciencemore/web/
+```
 
