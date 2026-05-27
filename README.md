@@ -15,25 +15,25 @@ This system helps manage students, teachers, parents, and admin tasks such as cl
 - Database: MySQL
 - Server:XAMPP (Apache)
 
--Install Dependencies-
-composer install
+1. Install Dependencies
+   composer install
 
--Configure Environment-
-cp .env.example .env
+2. Configure Environment
+   cp .env.example .env
 
--Update .env with your local settings:
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=
-DB_NAME=sciencemore
+3. Update .env with your local settings
+   DB_HOST = localhost
+   DB_USER = root
+   DB_PASS =
+   DB_NAME = sciencemore
 
-WEB_URL=http://localhost/Sciencemore/web/
-SYS_URL=http://localhost/Sciencemore/system/
+   WEB_URL=http://localhost/Sciencemore/web/
+   SYS_URL=http://localhost/Sciencemore/system/
 
-Use the provided SQL file:
+4. Use the provided SQL file:
 mysql -u root -p sciencemore < database/sciencemore.sql
 
-Run the Application:
+5. Run the Application:
 http://localhost/Sciencemore/web/
 
 
