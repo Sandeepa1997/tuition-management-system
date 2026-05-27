@@ -9,32 +9,46 @@ This system helps manage students, teachers, parents, and admin tasks such as cl
 - 👨‍👩‍👧 Parent: Child progress, exam results, performance monitoring
 - 🏫 Admin/Reception: Manage records, schedule exams, track attendance, handle payments
 
-🛠️ Technologies Used
-- Backend:PHP (Core PHP), Python (feedback collection)
+## 🔧 Technologies Used
+
+- Backend: PHP (Core PHP), Python (feedback collection)
 - Frontend: Bootstrap
 - Database: MySQL
-- Server:XAMPP (Apache)
+- Server: XAMPP (Apache)
 
-1. Install Dependencies
-   composer install
+## ⚙️ Setup Instructions
 
-2. Configure Environment
-   cp .env.example .env
+### 1. Install Dependencies
 
-3. Update .env with your local settings
-   DB_HOST = localhost
-   DB_USER = root
-   DB_PASS =
-   DB_NAME = sciencemore
+```bash
+composer install
+```
 
-   WEB_URL=http://localhost/Sciencemore/web/
-   SYS_URL=http://localhost/Sciencemore/system/
+### 2. Configure Environment
 
-4. Use the provided SQL file:
+```bash
+cp .env.example .env
+```
+
+### 3. Update `.env`
+
+```env
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=
+DB_NAME=sciencemore
+
+WEB_URL=http://localhost/Sciencemore/web/
+SYS_URL=http://localhost/Sciencemore/system/
+```
+
+### 4. Import Database
+
+```bash
 mysql -u root -p sciencemore < database/sciencemore.sql
+```
 
-5. Run the Application:
+### 5. Run the Application
+
 http://localhost/Sciencemore/web/
-
-
 
