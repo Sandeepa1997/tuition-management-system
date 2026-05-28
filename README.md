@@ -76,3 +76,12 @@ Open your browser and visit:
 http://localhost/Sciencemore/web/
 ```
 
+## 📖 Notes
+
+- Use `.env.example` as a template for `.env`.  
+- Do **not** commit `.env` to Git. It contains sensitive information.  
+- Database schema is included in `database/sciencemore.sql`.  
+- To import the database, run:
+
+  ```bash
+  mysql -u root -p sciencemore < database/sciencemore.sql
